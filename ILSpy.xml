@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ILSpy version="7.2.0.0">
+  <AssemblyLists>
+    <List name="(Default)">
+      <Assembly>/Applications/ILSpy.app/Contents/MacOS/System.Private.CoreLib.dll</Assembly>
+      <Assembly>/Applications/ILSpy.app/Contents/MacOS/System.Private.Uri.dll</Assembly>
+      <Assembly>/Applications/ILSpy.app/Contents/MacOS/System.Linq.dll</Assembly>
+      <Assembly>/Applications/ILSpy.app/Contents/MacOS/System.Private.Xml.dll</Assembly>
+      <Assembly>/Users/dominikbabic/Downloads/out/CarScannerXamarinForms.Android.dll</Assembly>
+    </List>
+  </AssemblyLists>
+  <SessionSettings>
+    <FilterSettings>
+      <ShowAPILevel>1</ShowAPILevel>
+      <Language>C#</Language>
+      <LanguageVersion>CSharp8_0</LanguageVersion>
+    </FilterSettings>
+    <ActiveAssemblyList>(Default)</ActiveAssemblyList>
+    <ActiveTreeViewPath>
+      <Node>\x002FUsers\x002Fdominikbabic\x002FDownloads\x002Fout\x002FCarScannerXamarinForms\x002EAndroid\x002Edll</Node>
+    </ActiveTreeViewPath>
+    <WindowState>Normal</WindowState>
+    <WindowBounds>178, 139, 750, 550</WindowBounds>
+    <SplitterPosition>0.4</SplitterPosition>
+    <TopPaneSplitterPosition>0.3</TopPaneSplitterPosition>
+    <BottomPaneSplitterPosition>0.3</BottomPaneSplitterPosition>
+    <SelectedSearchMode>TypeAndMember</SelectedSearchMode>
+    <Theme>Dark</Theme>
+  </SessionSettings>
+  <UpdateSettings>
+    <AutomaticUpdateCheckEnabled>true</AutomaticUpdateCheckEnabled>
+    <LastSuccessfulUpdateCheck>2024-12-08T15:23:15.285082Z</LastSuccessfulUpdateCheck>
+  </UpdateSettings>
+</ILSpy>
