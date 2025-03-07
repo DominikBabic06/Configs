@@ -23,9 +23,26 @@ keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) --
 keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" }) -- split window horizontally
 keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" }) -- make split windows equal width & height
 keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
+keymap.set("n", "dw", "<cmd>bd<CR>", { desc = "Close Buffer" })
+keymap.set("n", "<M-Left>", "<cmd>bp<CR>", { desc = "Previous Buffer" })
+keymap.set("n", "<M-Right>", "<cmd>bn<CR>", { desc = "Next Buffer" })
+
+keymap.set("n", "<leader>b1", "<cmd>b1<CR>", { desc = "Buffer 1" })
+keymap.set("n", "<leader>b2", "<cmd>b2<CR>", { desc = "Buffer 2" })
 
 keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" }) -- open new tab
 keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" }) -- close current tab
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
-keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
+keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Opken current buffer in new tab" }) --  move current buffer to new tab
+
+vim.keymap.set("n", "l", "k", { noremap = true }) -- e → hoch (↑)
+vim.keymap.set("n", ",", "h", { noremap = true }) -- , → links (←)
+vim.keymap.set("n", ".", "j", { noremap = true }) -- . → runter (↓)
+vim.keymap.set("n", "-", "l", { noremap = true }) -- - → rechts (→)
+
+-- Optional: Auch im Visual Mode aktivieren
+vim.keymap.set("v", "l", "k", { noremap = true })
+vim.keymap.set("v", ",", "h", { noremap = true })
+vim.keymap.set("v", ".", "j", { noremap = true })
+vim.keymap.set("v", "-", "l", { noremap = true })
