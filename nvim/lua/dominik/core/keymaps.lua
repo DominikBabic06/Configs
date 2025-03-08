@@ -23,7 +23,7 @@ keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) --
 keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" }) -- split window horizontally
 keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" }) -- make split windows equal width & height
 keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
-keymap.set("n", "dw", "<cmd>bd<CR>", { desc = "Close Buffer" })
+keymap.set("n", "<leader>w", "<cmd>bd<CR>", { desc = "Close Buffer" })
 keymap.set("n", "<M-Left>", "<cmd>bp<CR>", { desc = "Previous Buffer" })
 keymap.set("n", "<M-Right>", "<cmd>bn<CR>", { desc = "Next Buffer" })
 

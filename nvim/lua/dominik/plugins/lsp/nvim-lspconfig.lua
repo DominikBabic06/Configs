@@ -16,6 +16,15 @@ return {
 		-- import cmp-nvim-lsp plugin
 		local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
+		lspconfig.sourcekit.setup({
+			capabilities = {
+				workspace = {
+					didChangeWatchedFiles = {
+						dynamicRegistration = true,
+					},
+				},
+			},
+		})
 		local keymap = vim.keymap -- for conciseness
 
 		vim.api.nvim_create_autocmd("LspAttach", {
@@ -107,6 +116,7 @@ return {
 					filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
 				})
 			end,
+
 			["emmet_ls"] = function()
 				-- configure emmet language server
 				lspconfig["emmet_ls"].setup({
